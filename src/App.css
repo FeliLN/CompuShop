@@ -3,17 +3,17 @@
 }
 
 .App-content {
-  background-color: #ffffff;
+  background-color: #d1b9b9;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   font-size: calc(10px + 2vmin);
-  color: rgb(59, 2, 2);
-}
 
-.App-link {
-  color: #61dafb;
 }
+/* 
+.App-link {
+  
+} */
 
 @keyframes App-gif-spin {
   from {
