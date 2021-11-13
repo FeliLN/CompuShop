@@ -1,0 +1,20 @@
+.Carta {
+
+    font-family: arial;
+    font-size: 24px;
+    margin: 0 auto;
+    width: 350px;
+    height: 200px;
+    outline: dashed 1px rgb(19, 18, 18);
+    text-align: center;
+    position: relative;
+}
+
+.Card.Img{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 100%;
+}
