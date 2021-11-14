@@ -7,8 +7,8 @@ const Carta = (props) => { //Traigo los atributos del objeto creado en Shop
    const variable = "tuvieja";
    
     return (
-        <div className="">
-            <Card className="card">
+        <div className="card">
+            <Card className="header">
                 {/* Aca le pasé el atributo de img que traigo desde Shop */}
                 <Card.Img className="CardImg" variant="top" src={props.img} /> 
                 {/*  */}

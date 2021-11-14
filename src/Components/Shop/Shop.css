@@ -1,20 +1,24 @@
 .Board {
     align-items: center;
     justify-content: center;
-    width: 400px;
-    height: 300px;
-    background-color: #a05e5e;
-    margin-right:300px;
+    width: 100%;
+    height: 100%;
+    background-color: #c48080;
+    padding: 10px;
+    columns: 2;
+    
 }
 .Cartas {
     
     align-items: center;
     justify-content: center;
-    width:400px;
-    height: 300px;
-    background-color: #ad7979;
-    margin-right:300px;
+    width:100%;
+    height: 100%;
+    padding:10px;
+   
 }
 .card{
-    columns: 3;
+    padding-top:20px;
+    width: 100%;
+    flex-direction: row;
 }

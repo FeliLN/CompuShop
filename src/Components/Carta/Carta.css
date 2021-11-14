@@ -3,16 +3,23 @@
     justify-content: center;
     font-size: small;
     color: red;
+    
 }
 
 .CardImg{
     align-items: center ;
-    width: 100px;
-    height: 300px;
+    justify-content: center;
+    padding:40px;
+    
    
 }
 .card{
+    justify-content: center;
+    margin:auto;
+        
+}
+.header{
     width: 100%;
     text-align: left;
-    flex-direction: column;
+    flex-direction: row;
 }
