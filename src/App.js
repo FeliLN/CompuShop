@@ -22,7 +22,7 @@ function App() {
             <Route path="shop/*" element={<Shop />} />
           </Routes>
         </section>
-       
+      {/*< Slider />*/}   
       </BrowserRouter>
       </section>
     </div>
