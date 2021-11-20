@@ -1,6 +1,7 @@
 import Carousel from 'react-bootstrap/Carousel'
 import './Carousel.css'
 import imgHeader from './imgHeader.png'
+
 const CarouselComponent = () => {
     
   const prevIcon = <span className="carousel-control-prev-icon" height="100px"></span>
@@ -125,3 +126,4 @@ const CarouselComponent = () => {
 }
 
 export default CarouselComponent;*/
+
