@@ -1,20 +1,21 @@
 import React from 'react'
 import  CarouselComponent  from './Carousel/CarouselComponent';
-import './Home.css'
+
+
+
 
 
 const Home = () => {
 
 
     return (
-
-       <div className="Home">
-            
-        <section className="carousel" >
+        <div>
+            <h1>
+                Compu Mundo Hiper Mega Red
+            </h1>
+            <section >
                 <CarouselComponent />
-        </section>
-  
-
+            </section>
         </div>
     )
 }
