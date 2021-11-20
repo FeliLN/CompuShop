@@ -1,4 +1,6 @@
 import Carousel from 'react-bootstrap/Carousel'
+import ImgHeader from './imgHeader1.jpg'
+import './Carousel.css'
 
 
 const CarouselComponent = () => {
@@ -7,7 +9,7 @@ const CarouselComponent = () => {
   <Carousel.Item interval={1000}>
     <img
       className="d-block w-100"
-      src="https://www.latercera.com/resizer/zXy2WHJMbLQZ9-IQWyUTFAva1FE=/375x250/smart/cloudfront-us-east-1.images.arcpublishing.com/copesa/DYIU5QCGHJAJFOHFJXLPDJRS5Y.jpg"
+      src={ImgHeader}
       alt="First slide"
     />
     <Carousel.Caption>
@@ -18,7 +20,7 @@ const CarouselComponent = () => {
   <Carousel.Item interval={500}>
     <img
       className="d-block w-100"
-      src="https://www.latercera.com/resizer/zXy2WHJMbLQZ9-IQWyUTFAva1FE=/375x250/smart/cloudfront-us-east-1.images.arcpublishing.com/copesa/DYIU5QCGHJAJFOHFJXLPDJRS5Y.jpg"
+      src={ImgHeader}
       alt="Second slide"
     />
     <Carousel.Caption>
@@ -29,7 +31,7 @@ const CarouselComponent = () => {
   <Carousel.Item>
     <img
       className="d-block w-100"
-      src="https://www.latercera.com/resizer/zXy2WHJMbLQZ9-IQWyUTFAva1FE=/375x250/smart/cloudfront-us-east-1.images.arcpublishing.com/copesa/DYIU5QCGHJAJFOHFJXLPDJRS5Y.jpg"
+      src={ImgHeader}
       alt="Third slide"
     />
     <Carousel.Caption>
