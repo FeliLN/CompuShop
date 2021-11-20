@@ -19,14 +19,15 @@ li {
 }
 
 .navbar {
-  position: relative;
-  display: flex;
+  position: absolute;
+  
   justify-content: space-between;
   align-items: center;
   padding: 1rem 1.5rem;
-  background-color: rgb(70, 68, 68);
-  box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.25);
+  background-color: rgba(146, 27, 27, 0);
+  
   overflow: hidden;
+  z-index: 1;
 }
 
 .nav-content {

@@ -1,7 +1,7 @@
 import React from 'react'
 import './Shop.css';
 import Carta from '../Carta/Carta';
-import { Form, FormControl, Button } from 'react-bootstrap';
+
 const Shop = () => {
     
     const shop = {
@@ -24,16 +24,6 @@ const Shop = () => {
     
     return (
         <div className="shop">
-        
-            <Form className="form-search">
-                <FormControl
-                  type="search"
-                  placeholder="Search"
-                  className="me-2"
-                  aria-label="Search"
-                />
-                <Button variant="outline-success">Search</Button>
-              </Form>
               <div className="Board">
             <section className="Cartas">
                 {shop.items.map(item => <Carta key={item.id} item={item} img={item.img}/>)}

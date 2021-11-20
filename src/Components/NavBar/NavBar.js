@@ -49,8 +49,19 @@ export const NavBar = (props) => {
               </Form>
             </Offcanvas.Body>
           </Navbar.Offcanvas>
+          
         </Container>
+        
       </Navbar>
+      <Form className="form-search">
+                <FormControl
+                  type="search"
+                  placeholder="Search"
+                  className="me-2"
+                  aria-label="Search"
+                />
+                <Button variant="outline-success">Search</Button>
+      </Form>
       </div>
     </nav>
   );

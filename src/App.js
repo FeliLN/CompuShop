@@ -15,13 +15,14 @@ function App() {
       <section className="App-content">
      
       <BrowserRouter>
+   
         < NavBar /> 
-        <section className="App-body">
+    
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="shop/*" element={<Shop />} />
           </Routes>
-        </section>
+     
        
       </BrowserRouter>
       </section>
