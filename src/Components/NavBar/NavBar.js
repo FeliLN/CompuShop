@@ -13,10 +13,13 @@ export const NavBar = (props) => {
   return (
     <nav className='navbar'>
       <div className='nav-content'>
-      <Navbar bg="light" expand={false} collapseOnSelect>
-        <Container fluid>
-          <Navbar.Brand href="/">Logo</Navbar.Brand>
-          <Navbar.Toggle aria-controls="offcanvasNavbar" />
+      <Navbar bg="transparent" expand={false} collapseOnSelect variant="dark">
+        <Container >
+          <Navbar.Brand href="/"><h1 className="Logo">Logo</h1></Navbar.Brand>
+          <Navbar.Toggle className="Toggle" aria-controls="offcanvasNavbar" />
+        
+
+          {/* Tab content */}
           <Navbar.Offcanvas
             id="offcanvasNavbar"
             aria-labelledby="offcanvasNavbarLabel"
@@ -43,7 +46,7 @@ export const NavBar = (props) => {
                   type="search"
                   placeholder="Search"
                   className="me-2"
-                  aria-label="Search"
+                  aria-label="Search"                
                 />
                 <Button variant="outline-success">Search</Button>
               </Form>
@@ -59,8 +62,21 @@ export const NavBar = (props) => {
                   placeholder="Search"
                   className="me-2"
                   aria-label="Search"
+                  bg="dark"
                 />
-                <Button variant="outline-success">Search</Button>
+               
+      <Button  style={
+          {
+          color:"#8ff93c", 
+          backgroundColor:"black", 
+          transition:"all 1s ease 0s"
+          } 
+          
+        }
+        variant="outline-secondary" size="sm">
+        Search
+      </Button>
+     
       </Form>
       </div>
     </nav>
