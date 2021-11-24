@@ -1,0 +1,26 @@
+.text {
+    align-items: center ;
+    justify-content: center;
+    font-size: small;
+    color: red;
+    
+}
+
+.CardImg{
+    align-items: center ;
+    justify-content: center;
+    padding:40px;
+    
+   
+}
+.card{
+    justify-content: center;
+    margin:auto;
+    
+}
+.header{
+    width: 100%;
+    text-align: left;
+    text-align: center;    
+    justify-content: center;
+}

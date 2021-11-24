@@ -1,0 +1,247 @@
+a:hover,
+a:focus,
+a:active,
+a.active {
+  outline: 0;
+  
+}
+
+a:hover,
+a:focus,
+a:active,
+a.active {
+  color: #ee1616;
+  
+}
+
+
+.bg-light{
+  width: 100% ;
+  height: 100px;
+
+background-color: rgb(0, 0, 0) !important;
+}; 
+
+
+.container{
+  width: 100% !important;
+  height: 100px;
+  color: rgb(211, 9, 9);
+  border-color:red;
+  background-color: rgb(255, 176, 176);
+}
+.Logo{
+  
+  color: white;
+}
+.Toggle{
+  color: white !important;
+  background-color: black !important;
+  transition: 1s;
+}
+.Toggle:hover{
+  color: rgb(0, 0, 0) !important;
+  background-color: #71c530 !important;
+  transition: 1s;
+}
+.navbar-light .navbar-toggler-icon {
+  color: white !important;
+  background-color: rgb(0, 0, 0) !important;
+ 
+ }
+
+.btn-outline-secondary:hover{
+  color: rgb(0, 0, 0) !important;
+   background-color: #71c530 !important; 
+ 
+ }
+
+li {
+  list-style: none;
+  border-right: 1px solid rgb(185, 14, 14);
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar {
+  width: auto;
+  height: 100px;
+  position: absolute;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  background-color: rgb(0, 0, 0);
+  overflow: hidden;
+  z-index: 1;
+  
+}
+
+.nav-content {
+  display: flex;
+  background-color: rgb(0, 0, 0);
+}
+
+.hamburger {
+  display: none;
+  
+  color: rgb(255, 255, 255)
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 50%;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #ffffff;
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 80px;
+  background-color: rgb(255, 255, 255);
+}
+
+
+/* tab content */
+.nav-link { 
+  font-weight: 400;
+  text-transform: uppercase;
+  font-family: 'system-ui';
+  font-size: 18px;
+  letter-spacing: 1px;
+  color: #ffffff;
+  padding: 10px 14px;
+  text-decoration: none;
+  -webkit-transition: all 0.8s;
+  -moz-transition: all 0.8s;
+  transition: all 0.8s;
+  font-weight: 500;
+  display: block;
+  background-color: rgb(255, 255, 255);
+}
+
+.nav-link:hover {
+  color: #ffffff;
+  
+}
+
+@media only screen and (max-width: 1400px) {
+  .nav-link {
+    font-size: 16px;
+  }
+
+  .nav-menu {
+    padding-right: 40px;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .nav-link {
+    font-size: 14px;
+  }
+
+  .nav-menu {
+    padding-right: 20px;
+  }
+
+  .nav-link {
+    padding: 4.6px;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .navbar {
+    display: flex;
+  }
+
+  .nav-content {
+    order: 3;
+  }
+
+  .nav-menu {
+    position: absolute;
+    left: -100%;
+    top: 5.7rem;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    border-radius: 10px;
+    text-align: center;
+    transition: 0.3s;
+    box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+    z-index: 1;
+  }
+
+  .nav-link {
+    padding: 0 0;
+    margin: 20px 10px;
+    font-size: 14px;
+    color: #000000;
+    background-color: rgb(255, 255, 255);
+  }
+
+  .nav-menu.active {
+    left: 0;
+  }
+
+  .hamburger {
+    display: block;
+    cursor: pointer;
+    
+    order: 1;
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+  @media only screen and (max-width: 500px) {
+    .nav-menu {
+      top: 5.3rem;
+    }
+  }
+  @media only screen and (max-width: 500px) {
+    .nav-menu {
+      top: 5.3rem;
+    }
+  }
+
+  @media only screen and (max-width: 450px) {
+    .nav-menu {
+      top: 4.5rem;
+    }
+  }
+  @media only screen and (max-width: 400px) {
+    .nav-menu {
+      top: 4.3rem;
+    }
+  }
+
+  @media only screen and (max-width: 375px) {
+    .nav-menu {
+      top: 4rem;
+    }
+  }
+
+  @media only screen and (max-width: 350px) {
+    .nav-menu {
+      top: 4rem;
+    }
+  }
+
+  @media only screen and (max-width: 250px) {
+    .nav-menu {
+      top: 5rem;
+    }
+  }
+}
