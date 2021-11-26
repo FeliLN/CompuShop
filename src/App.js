@@ -24,7 +24,7 @@ function App() {
             <Route path="shop/*" element={<Shop />} />
           </Routes>
       </section>
-      <Footer />
+      <Footer /> 
       </BrowserRouter>
       </section>
 
