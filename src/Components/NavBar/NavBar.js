@@ -11,6 +11,7 @@ export const NavBar = (props) => {
   const shop = 'shop';
 
   return (
+
     <nav className='navbar'>
       <div className='nav-content'>
       <Navbar bg="transparent" expand={false} collapseOnSelect variant="dark">
@@ -80,6 +81,7 @@ export const NavBar = (props) => {
       </Form>
       </div>
     </nav>
+  
   );
 };
 

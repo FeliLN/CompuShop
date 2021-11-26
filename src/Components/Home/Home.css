@@ -1,13 +1,13 @@
 .Home{
     width: 100%;
     background-color: #220e0ea8;
-    position: absolute;
-
+    position: relative;
+    height: 100%;
 }
 
 
 .carousel {
-  
+    
     position: absolute;
     background-color: #302121a8;
 }

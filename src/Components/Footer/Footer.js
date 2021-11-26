@@ -1,3 +1,4 @@
+
 import React from "react";
 import {
   Box,
@@ -9,6 +10,7 @@ import {
 } from "./FooterStyles";
   
 const Footer = () => {
+
   return (
     <Box>
       <h1 style={{ color: "green", 
@@ -37,6 +39,7 @@ const Footer = () => {
             <FooterLink href="#">Ahemdabad</FooterLink>
             <FooterLink href="#">Indore</FooterLink>
             <FooterLink href="#">Mumbai</FooterLink>
+
           </Column>
           <Column>
             <Heading>Social Media</Heading>
@@ -71,6 +74,7 @@ const Footer = () => {
           </Column>
         </Row>
       </Container>
+
     </Box>
   );
 };
