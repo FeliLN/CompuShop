@@ -1,41 +1,38 @@
 import styled from 'styled-components';
    
 export const Box = styled.div`
-  margin: 0 auto;
-  font-size: medium;
-  font-weight: bold;
-  text-align: center;
-  //
-  padding: 80px 60px;
-  background: black;
+  padding: 60px 60px; 
   position: relative;
-  top: 100vh;
   width: 100%;
-  padding: 80px 0;
-  box-sizing: border-box;
-  height: 100%;
+  background-image: linear-gradient( 180deg,  #1c1d1f 8.8%, #aab6c4 400% );
+  margin: auto;
   
-  
-   
   @media (max-width: 1000px) {
     padding: 70px 30px;
   }
 `;
    
 export const Container = styled.div`
-    display: flex;
     flex-direction: column;
+    columns:3;
     justify-content: center;
+    
+    width: 100%;
     max-width: 1000px;
     margin: 0 auto;
-    /* background: red; */
+    display: block;
+    text-decoration: none;
+    color: #adb6c7;
+    font-weight: 200;
+    transition:  color .3s ease-in-out;
+    margin-bottom: 10px;
 `
    
 export const Column = styled.div`
   display: flex;
   flex-direction: column;
-  text-align: left;
-  margin-left: 60px;
+  text-align: center;
+  
 `;
    
 export const Row = styled.div`
@@ -68,3 +65,4 @@ export const Heading = styled.p`
   margin-bottom: 40px;
   font-weight: bold;
 `;
+

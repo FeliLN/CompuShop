@@ -12,6 +12,8 @@ const Home = () => {
             <section >
                 
                 <CarouselComponent />
+            <section className="imgs" >
+                    <h1>Esto esta solved</h1>
                 <img src={imgHeader} alt="imgHeader" className="img-fluid" />
                 <img src={imgHeader} alt="imgHeader" className="img-fluid" />
                 <img src={imgHeader} alt="imgHeader" className="img-fluid" />
@@ -24,6 +26,7 @@ const Home = () => {
                 <img src={imgHeader} alt="imgHeader" className="img-fluid" />
                 <img src={imgHeader} alt="imgHeader" className="img-fluid" />
                 <img src={imgHeader} alt="imgHeader" className="img-fluid" />
+                </section>
             </section>
 
         </div>

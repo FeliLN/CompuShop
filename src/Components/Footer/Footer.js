@@ -1,4 +1,3 @@
-
 import React from "react";
 import {
   Box,
@@ -8,18 +7,25 @@ import {
   FooterLink,
   Heading,
 } from "./FooterStyles";
-  
+import './Footer.css'
+// Font Awesome Icons
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { fab } from '@fortawesome/free-brands-svg-icons'
+
+library.add(fab) 
+
 const Footer = () => {
 
   return (
     <Box>
-      <h1 style={{ color: "green", 
+      {/* <h1 style={{ color: "green", 
                    textAlign: "center", 
                    marginTop: "-50px" }}>
         Compushop: Improving your setup
-      </h1>
+      </h1> */}
       <Container>
-        <Row>
+        {/* <Row>
           <Column>
             <Heading>About Us</Heading>
             <FooterLink href="#">Aim</FooterLink>
@@ -41,40 +47,15 @@ const Footer = () => {
             <FooterLink href="#">Mumbai</FooterLink>
 
           </Column>
-          <Column>
-            <Heading>Social Media</Heading>
-            <FooterLink href="#">
-              <i className="fab fa-facebook-f">
-                <span style={{ marginLeft: "10px" }}>
-                  Facebook
-                </span>
-              </i>
-            </FooterLink>
-            <FooterLink href="#">
-              <i className="fab fa-instagram">
-                <span style={{ marginLeft: "10px" }}>
-                  Instagram
-                </span>
-              </i>
-            </FooterLink>
-            <FooterLink href="#">
-              <i className="fab fa-twitter">
-                <span style={{ marginLeft: "10px" }}>
-                  Twitter
-                </span>
-              </i>
-            </FooterLink>
-            <FooterLink href="#">
-              <i className="fab fa-youtube">
-                <span style={{ marginLeft: "10px" }}>
-                  Youtube
-                </span>
-              </i>
-            </FooterLink>
-          </Column>
-        </Row>
-      </Container>
+          </Row> */}
 
+      </Container>
+      <section className="social-media">
+          <FontAwesomeIcon icon={['fab', 'facebook-f']}  transform="shrink-6" className="facebook" />
+          <FontAwesomeIcon icon={['fab', 'twitter']} transform="shrink-6" className="twitter" />
+          <FontAwesomeIcon icon={['fab', 'instagram']} transform="shrink-6" className="instagram" />
+          <FontAwesomeIcon icon={['fab', 'youtube']} transform="shrink-6" className="youtube" />
+      </section>
     </Box>
   );
 };

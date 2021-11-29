@@ -16,13 +16,10 @@
 
 }
 
-.NavBar {
-  z-index: 1;
-}
+
 
 .Routes {
-  z-index: 0;
-  position: absolute;
+  position: relative;
   width: 100%;
   height: 100%;
 }
