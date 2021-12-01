@@ -18,15 +18,14 @@
     z-index: 1;
 }
 .fondoProcesadores{
-    /* margin:auto; */
+    width: 800px;
+    height: 800px;
     display: block;
-  
-    margin: auto;
-    /* top:100px; */
-    left: -500px;
+    margin: 100px auto;
+    left: -400px;
     position: absolute;
   
-    /* z-index: -1; */
+   
    
     
 }

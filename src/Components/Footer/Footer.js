@@ -8,6 +8,7 @@ import {
   // Heading,
 } from "./FooterStyles";
 import './Footer.css'
+import Logo from '../img/on-logo3D-1.png'
 // Font Awesome Icons
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { library } from '@fortawesome/fontawesome-svg-core'
@@ -24,6 +25,7 @@ const Footer = () => {
                    marginTop: "-50px" }}>
         Compushop: Improving your setup
       </h1> */}
+      <img src={Logo} alt="logo" style={{ width: "100px", display: "block", position: "absolute" }} />
       <Container>
         {/* <Row>
           <Column>

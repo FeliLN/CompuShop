@@ -6,6 +6,7 @@ import {Navbar, Container, Nav, NavDropdown, Offcanvas, Button, Form, FormContro
 // Estilo
 import './NavBar.css';
 
+import Logo from '../img/on-logo3D-1.png';
 
 export const NavBar = (props) => {
   const shop = 'shop';
@@ -16,7 +17,13 @@ export const NavBar = (props) => {
       <div className='nav-content'>
       <Navbar bg="transparent" expand={false} collapseOnSelect variant="dark">
         <Container >
-          <Navbar.Brand href="/"><h1 className="Logo">Logo</h1></Navbar.Brand>
+          <Navbar.Brand href="/">
+            <img src={Logo} alt="logo" className="logo" />
+            
+            {/* <h1 className="Logo"> 
+          
+           </h1> */}
+           </Navbar.Brand>
           <Navbar.Toggle className="Toggle" aria-controls="offcanvasNavbar" />
         
 
