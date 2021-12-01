@@ -8,6 +8,10 @@ import './NavBar.css';
 
 import Logo from '../img/on-logo3D-1.png';
 
+//FontAwesome
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faSearch, faShoppingCart, faUser } from "@fortawesome/free-solid-svg-icons";
+
 export const NavBar = (props) => {
   const shop = 'shop';
 
@@ -56,7 +60,9 @@ export const NavBar = (props) => {
                   className="me-2"
                   aria-label="Search"                
                 />
-                <Button variant="outline-success">Search</Button>
+                <Button variant="outline-success">
+                  <FontAwesomeIcon icon={faSearch} transform="grow-2" />
+                  </Button>
               </Form>
             </Offcanvas.Body>
           </Navbar.Offcanvas>
@@ -67,7 +73,7 @@ export const NavBar = (props) => {
       <Form className="form-search">
                 <FormControl
                   type="search"
-                  placeholder="Search"
+                  placeholder="Look in Market"
                   className="me-2"
                   aria-label="Search"
                   bg="dark"
@@ -77,15 +83,24 @@ export const NavBar = (props) => {
           {
           color:"#8ff93c", 
           backgroundColor:"black", 
-          transition:"all 1s ease 0s"
+          transition:"all 1s ease 0s",
+          width: "40px"
           } 
           
         }
         variant="outline-secondary" size="sm">
-        Search
+        <FontAwesomeIcon icon={faSearch} transform="grow-4" />
       </Button>
-     
+      
       </Form>
+     
+      </div>
+
+      <div className="nav-content-2">
+      <h3 className="FAQ"> FAQ </h3>
+      <h3 className="Contact" > Contact </h3>
+      <FontAwesomeIcon icon={faShoppingCart} transform="shrink-6" className="Cart"  />
+      <FontAwesomeIcon icon={faUser} transform="shrink-6" className="User"  />
       </div>
     </nav>
   
