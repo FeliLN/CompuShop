@@ -37,7 +37,7 @@ background-color: rgb(0, 0, 0) !important;
 .Toggle{
   color: white !important;
   background-color: black !important;
-  transition: 1s;
+ 
 }
 .Toggle:hover{
   color: rgb(0, 0, 0) !important;

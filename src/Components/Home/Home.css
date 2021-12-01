@@ -5,14 +5,104 @@
     height: 100%;
 }
 
-
 .carousel {
-    
     position: absolute;
     background-color: #302121a8;
 }
 
-.imgs{
- position: relative;
+.procesadores {
+    padding: 50px;
+    position: relative;
+    background: rgb(147,143,149);
+    background: linear-gradient(180deg, rgba(147,143,149,1) 0%, rgba(193,193,201,1) 50%, rgba(229,231,232,1) 100%);
+    z-index: 1;
+}
+.fondoProcesadores{
+    /* margin:auto; */
+    display: block;
+  
+    margin: auto;
+    /* top:100px; */
+    left: -500px;
+    position: absolute;
+  
+    /* z-index: -1; */
+   
     
+}
+@keyframes spin {
+    from {transform:rotate(0deg);}
+    to {transform:rotate(360deg);}
+}
+.title{
+    color: #fff;
+    font-size: 50px;
+    font-family: 'Gugi', cursive;
+    padding: 15px;
+    padding-left: 90px;
+    padding-right: 90px;
+    margin:auto;
+    display: block;
+    text-align: center;
+    background: #66b828;
+    border-radius: 12px;
+    transition: .2s;
+    border: 2px solid #fff;
+    z-index: 2;
+}
+.title:hover{
+    transform: scale(1.05);
+}    
+.logo-procesadores{
+    width: 100%;
+    height: 300px;
+    margin-top: 100px;
+    columns: 2;  
+    display: block;
+    transition: .2s;
+    z-index: 2;
+}
+
+.intel {
+    width: 220px;
+    height: 150px;
+    filter: grayscale(100%);
+    margin: 10px auto;
+    transition: .2s;
+    display: block;
+}
+
+.amd {
+    width: 200px;
+    height: 200px;
+    filter: grayscale(100%);
+    margin: auto;
+    transition: .2s;
+}
+
+.nvidia {
+    width: 20%;
+    height: 20%;
+    filter: grayscale(100%);
+    
+    margin: auto;
+    display: block;
+    transition: .2s;
+}
+
+.intel:hover{
+    transform: scale(1.1,1.1);
+    filter: grayscale(0%);
+}
+
+.amd:hover{
+    filter: grayscale(0%);
+    transform: scale(1.1,1.1);
+
+}
+
+.nvidia:hover{
+    filter: grayscale(0%);
+    transform: scale(1.1,1.1);
+
 }

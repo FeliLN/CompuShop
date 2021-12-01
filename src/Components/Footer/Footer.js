@@ -2,10 +2,10 @@ import React from "react";
 import {
   Box,
   Container,
-  Row,
-  Column,
-  FooterLink,
-  Heading,
+  // Row,
+  // Column,
+  // FooterLink,
+  // Heading,
 } from "./FooterStyles";
 import './Footer.css'
 // Font Awesome Icons
