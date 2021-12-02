@@ -5,7 +5,7 @@ import './Home.css'
 import Intel from '../img/intel.png'
 import Amd from '../img/amd.png'
 import Nvidia from '../img/nvidia.png'
-import FondoProcesadores from '../img/circle.png'
+// import FondoProcesadores from '../img/circle.png'
 
 const Home = () => {
 
@@ -28,8 +28,8 @@ const [speed, setSpeed] = useState(100);
             <div className="procesadores" 
            
             > 
-                <img src={FondoProcesadores} alt="fondo" className="fondoProcesadores" style={{animation: `spin ${speed}s linear infinite`}}/>
-                <button  className="title">Get Started!</button>
+                {/* <img src={FondoProcesadores} alt="fondo" className="fondoProcesadores" style={{animation: `spin ${speed}s linear infinite`}}/> */}
+                <button  className="buttonShop">Get Started!</button>
                 <section className="logo-procesadores" >
                     <img src={Intel} alt="intel" className="intel" color="grey" />   
                     <img src={Amd} alt="amd" className="amd" />  
