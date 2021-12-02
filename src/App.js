@@ -5,6 +5,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Home from './Components/Home/Home';
 import Shop from './Components/Shop/Shop';
 import Footer from './Components/Footer/Footer';
+
   
 
 function App() {
