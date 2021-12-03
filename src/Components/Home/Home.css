@@ -33,7 +33,7 @@
     from {transform:rotate(0deg);}
     to {transform:rotate(360deg);}
 }
-.title{
+.buttonShop{
     color: #fff;
     font-size: 50px;
     font-family: 'Gugi', cursive;
@@ -49,7 +49,7 @@
     border: 2px solid #fff;
     z-index: 2;
 }
-.title:hover{
+.buttonShop:hover{
     transform: scale(1.05);
 }    
 .logo-procesadores{
