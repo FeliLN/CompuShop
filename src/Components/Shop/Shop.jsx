@@ -3,6 +3,8 @@ import './Shop.css';
 import Axios from 'axios';
 
 
+
+
 const Shop = () => {
 
     const [cartas, setCartas] = useState([]);
@@ -24,7 +26,7 @@ const Shop = () => {
         <div className="price">
            $ {d.price} 
         </div>
-        <button className="button">Comprar</button>
+        <button className="btn-grad ">Añadir al carrito</button>
     </li>
     );
    
