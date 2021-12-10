@@ -10,7 +10,7 @@ import Nvidia from '../img/nvidia.png'
 const Home = () => {
 
 // const [isLoading, setisLoading] = useState(false);
-const [speed, setSpeed] = useState(100);
+// const [speed, setSpeed] = useState(100);
 
 //useEffect(() => {
     //isLoading = true;

@@ -2,7 +2,9 @@ import React, { useState, useEffect} from 'react'
 import './Shop.css';
 import Axios from 'axios';
 
-
+function formatPrice(price) {
+    return price.toFixed(2).replace(/\d(?=(\d{3})+\.)/g, '$&,');
+}
 
 
 const Shop = () => {
@@ -10,7 +12,7 @@ const Shop = () => {
     const [cartas, setCartas] = useState([]);
     
     useEffect(() => {
-        Axios.get('https://api.mercadolibre.com/sites/MLA/search?q=computadoras')
+        Axios.get('https://api.mercadolibre.com/sites/MLA/search?q=pc')
         .then (response => {
             console.log(response);
             setCartas(response.data.results);
@@ -24,7 +26,7 @@ const Shop = () => {
             {d.title}
         </div>
         <div className="price">
-           $ {d.price} 
+           $ {formatPrice(d.price)} 
         </div>
         <button className="btn-grad ">Añadir al carrito</button>
     </li>

@@ -4,7 +4,7 @@ export const Box = styled.div`
   padding: 60px 60px; 
   position: relative;
   width: 100%;
-  background-image: linear-gradient( 180deg,  #1c1d1f 8.8%, #aab6c4 400% );
+  background-color:black;
   margin: auto;
   
   @media (max-width: 1000px) {
