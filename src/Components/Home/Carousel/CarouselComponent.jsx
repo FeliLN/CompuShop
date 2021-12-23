@@ -1,23 +1,51 @@
+import React, { Suspense } from 'react'
 import Carousel from 'react-bootstrap/Carousel'
 import ImgHeader from '../../img/imgHeader1.jpg'
 import './Carousel.css'
+import  ThemeScene  from '../ThemeScene';
+import Shoe from '../Logo'
 
+import { OrbitControls, Stage, BakeShadows } from '@react-three/drei'
 
 const CarouselComponent = () => {
   return(
     <Carousel >
-      <Carousel.Item interval={1000}>
-        <img
+      <Carousel.Item interval={10000}>
+        {/* <img
           className="d-block w-100"
           src={ImgHeader}
           alt="First slide"
-        />
+        /> */}
+        <div style={{height : '100vh'}}>
+          <ThemeScene >
+          <color attach="background" args={['cyan']} />
+          
+          {/* <Suspense fallback={null}>
+           <Logo 
+          //  position={[1,1,100]}
+            />
+           </Suspense> */}
+
+           <Suspense fallback={null}>
+        <Stage 
+        // environment="city" intensity={0.5} contactShadowOpacity={0.6} contactShadowBlur={1}
+        >
+          <Shoe position={[0, 0, 0]} />
+          <Shoe scale={-1} rotation={[0, 0.5, Math.PI]} position={[0, 0, -2]} />
+        </Stage>
+        <BakeShadows />
+      </Suspense>
+      <OrbitControls autoRotate />
+           <ambientLight/>
+           <OrbitControls />
+          </ThemeScene>
+        </div> 
         <Carousel.Caption>
           <h1>First slide label</h1>
           <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
         </Carousel.Caption>
       </Carousel.Item>
-      <Carousel.Item interval={500}>
+      <Carousel.Item interval={1000}>
         <img
           className="d-block w-100"
           src={ImgHeader}
