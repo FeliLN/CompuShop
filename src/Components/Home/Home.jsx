@@ -1,20 +1,15 @@
-import React, { useState } from 'react'
-// import { Button } from 'react-bootstrap'
+import React from 'react'
+
 import  CarouselComponent  from './Carousel/CarouselComponent';
 import './Home.css'
 import Intel from '../img/intel.png'
 import Amd from '../img/amd.png'
 import Nvidia from '../img/nvidia.png'
-// import FondoProcesadores from '../img/circle.png'
+
 
 const Home = () => {
 
-// const [isLoading, setisLoading] = useState(false);
-const [speed, setSpeed] = useState(100);
 
-//useEffect(() => {
-    //isLoading = true;
-    //setShow(true);
     
 
 

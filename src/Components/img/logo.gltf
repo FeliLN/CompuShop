@@ -1,0 +1,142 @@
+{
+  "asset": {
+    "generator": "Khronos glTF Blender I/O v1.5.17",
+    "version": "2.0"
+  },
+  "scene": 0,
+  "scenes": [
+    {
+      "name": "Scene",
+      "nodes": [
+        0,
+        1,
+        2
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "name": "shoe"
+    },
+    {
+      "name": "Camera"
+    },
+
+    {
+      "mesh": 0,
+      "name": "Curve",
+      "rotation": [
+        0.3562236726284027,
+        0.18385709822177887,
+        -0.8169125318527222,
+        -0.4146747887134552
+      ],
+      "scale": [
+        24.98316764831543,
+        34.2562255859375,
+        24.98316764831543
+      ],
+      "translation": [
+        -0.8769918084144592,
+        -1.2428240776062012,
+        1.7808629274368286
+      ]
+    }
+  ],
+  "materials": [
+    {
+      "doubleSided": true,
+      "name": "logo",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.023696471005678177,
+          1,
+          0.05462486296892166,
+          1
+        ],
+        "metallicFactor": 0,
+        "roughnessFactor": 0.5
+      }
+    }
+  ],
+  "meshes": [
+    {
+      "name": "Curve",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TEXCOORD_0": 2
+          },
+          "indices": 3,
+          "material": 0
+        }
+      ]
+    }
+  ],
+  "accessors": [
+    {
+      "bufferView": 0,
+      "componentType": 5126,
+      "count": 1847,
+      "max": [
+        0.1422429084777832,
+        0.011436112225055695,
+        -0.0022573471069335938
+      ],
+      "min": [
+        0.002257823944091797,
+        0,
+        -0.14447021484375
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 1847,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "componentType": 5126,
+      "count": 1847,
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 3,
+      "componentType": 5123,
+      "count": 3012,
+      "type": "SCALAR"
+    }
+  ],
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 22164,
+      "byteOffset": 0
+    },
+    {
+      "buffer": 0,
+      "byteLength": 22164,
+      "byteOffset": 22164
+    },
+    {
+      "buffer": 0,
+      "byteLength": 14776,
+      "byteOffset": 44328
+    },
+    {
+      "buffer": 0,
+      "byteLength": 6024,
+      "byteOffset": 59104
+    }
+  ],
+  "buffers": [
+    {
+      "uri": "logo_data.bin",
+      "byteLength": 65128
+    }
+  ]
+}

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 
 //Bootstrap
 import {Navbar, Container, Nav, NavDropdown, Offcanvas, Button, Form, FormControl} from 'react-bootstrap';
@@ -13,7 +13,27 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSearch, faShoppingCart, faUser } from "@fortawesome/free-solid-svg-icons";
 
 export const NavBar = (props) => {
+
+
   const shop = 'shop';
+  const [searchItem, setSearchItem] = useState('Que buscabas?');
+  // const {handleSearch} = this.props;
+
+  const handleChange = (event) => {
+    
+    setSearchItem(event.target.value);
+    
+    return searchItem;
+  }
+
+  const handleSubmit = (event) => {
+
+    // setSearchItem(event.target.value);
+    console.log(searchItem);
+  }
+  console.log(searchItem);
+
+ 
 
   return (
 
@@ -55,12 +75,16 @@ export const NavBar = (props) => {
               </Nav>
               <Form className="d-flex">
                 <FormControl
+                  onChange={handleChange}
+                  onSubmit={handleSubmit}
                   type="search"
-                  placeholder="Search"
+                  placeholder={props.searchItem}
                   className="me-2"
                   aria-label="Search"                
                 />
-                <Button variant="outline-success">
+                <Button 
+                onClick={props.handleSearch} 
+                variant="outline-success">
                   <FontAwesomeIcon icon={faSearch} transform="grow-2" />
                   </Button>
               </Form>
@@ -72,8 +96,10 @@ export const NavBar = (props) => {
       </Navbar>
       <Form className="form-search">
                 <FormControl
+                  onChange={handleChange}
+                  onSubmit={handleSubmit}
                   type="search"
-                  placeholder="Look in Market"
+                  placeholder={props.searchItem}
                   className="me-2"
                   aria-label="Search"
                   bg="dark"
@@ -88,6 +114,7 @@ export const NavBar = (props) => {
           } 
           
         }
+        onClick={props.handleSearch}
         variant="outline-secondary" size="sm">
         <FontAwesomeIcon icon={faSearch} transform="grow-4" />
       </Button>
@@ -107,3 +134,4 @@ export const NavBar = (props) => {
   );
 };
 
+export default NavBar;

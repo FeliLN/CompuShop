@@ -1,16 +1,23 @@
 import React, { useState, useEffect} from 'react'
 import './Shop.css';
 import Axios from 'axios';
+import NavBar from '../NavBar/NavBar';
+
+function formatPrice(price) {
+    return price.toFixed(2).replace(/\d(?=(\d{3})+\.)/g, '$&,');
+}
 
 
 
+const Shop = (props) => {
 
-const Shop = () => {
+    const [searchItem, setSearchItem] = useState('componentes');
 
+    const api = 'https://api.mercadolibre.com/sites/MLA/search?q=' + searchItem;
     const [cartas, setCartas] = useState([]);
     
     useEffect(() => {
-        Axios.get('https://api.mercadolibre.com/sites/MLA/search?q=computadoras')
+        Axios.get(api)
         .then (response => {
             console.log(response);
             setCartas(response.data.results);
@@ -24,14 +31,28 @@ const Shop = () => {
             {d.title}
         </div>
         <div className="price">
-           $ {d.price} 
+           $ {formatPrice(d.price)} 
         </div>
         <button className="btn-grad ">Añadir al carrito</button>
     </li>
     );
-   
-    return (
+    
+    const handleChange = (e) => {
+        setSearchItem(e.target.value);
+        return searchItem;
+    }
+
+    const handleSearch = (e) => {
+        setSearchItem(e.target.value);
+        return searchItem;
+
+    }
+
+    return (    
         <div className="shop">
+            <NavBar 
+            handleSearch={handleSearch}
+            />
             <div className="Board">
                 <section className="Cartas">
                    {listItems}
