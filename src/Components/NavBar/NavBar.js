@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 
 //Bootstrap
 import {Navbar, Container, Nav, NavDropdown, Offcanvas, Button, Form, FormControl} from 'react-bootstrap';
@@ -13,27 +13,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSearch, faShoppingCart, faUser } from "@fortawesome/free-solid-svg-icons";
 
 export const NavBar = (props) => {
-
-
   const shop = 'shop';
-  const [searchItem, setSearchItem] = useState('Que buscabas?');
-  // const {handleSearch} = this.props;
-
-  const handleChange = (event) => {
-    
-    setSearchItem(event.target.value);
-    
-    return searchItem;
-  }
-
-  const handleSubmit = (event) => {
-
-    // setSearchItem(event.target.value);
-    console.log(searchItem);
-  }
-  console.log(searchItem);
-
- 
 
   return (
 
@@ -49,7 +29,6 @@ export const NavBar = (props) => {
            </h1> */}
            </Navbar.Brand>
           <Navbar.Toggle className="Toggle" aria-controls="offcanvasNavbar" />
-        
 
           {/* Tab content */}
           <Navbar.Offcanvas
@@ -58,7 +37,7 @@ export const NavBar = (props) => {
             placement="start"
           >
             <Offcanvas.Header closeButton>
-              <Offcanvas.Title id="offcanvasNavbarLabel">Compumundo</Offcanvas.Title>
+              <Offcanvas.Title id="offcanvasNavbarLabel">G-Soft</Offcanvas.Title>
             </Offcanvas.Header>
             <Offcanvas.Body>
               <Nav className="justify-content-end flex-grow-1 pe-3">
@@ -75,15 +54,16 @@ export const NavBar = (props) => {
               </Nav>
               <Form className="d-flex">
                 <FormControl
-                  onChange={handleChange}
-                  onSubmit={handleSubmit}
+                  onChange={props.handleChange}
+                  onSubmit={props.onSubmit}
                   type="search"
-                  placeholder={props.searchItem}
+                  placeholder={"Search"}
                   className="me-2"
                   aria-label="Search"                
                 />
                 <Button 
-                onClick={props.handleSearch} 
+                type="submit"
+                onClick={props.onSubmit} 
                 variant="outline-success">
                   <FontAwesomeIcon icon={faSearch} transform="grow-2" />
                   </Button>
@@ -96,15 +76,14 @@ export const NavBar = (props) => {
       </Navbar>
       <Form className="form-search">
                 <FormControl
-                  onChange={handleChange}
-                  onSubmit={handleSubmit}
+                  onChange={props.handleChange}
+                  onSubmit={props.onSubmit}
                   type="search"
-                  placeholder={props.searchItem}
+                  placeholder={"Search"}
                   className="me-2"
                   aria-label="Search"
                   bg="dark"
                 />
-               
       <Button  style={
           {
           color:"#8ff93c", 
@@ -114,7 +93,8 @@ export const NavBar = (props) => {
           } 
           
         }
-        onClick={props.handleSearch}
+        type="submit"
+        onClick={props.onSubmit}
         variant="outline-secondary" size="sm">
         <FontAwesomeIcon icon={faSearch} transform="grow-4" />
       </Button>

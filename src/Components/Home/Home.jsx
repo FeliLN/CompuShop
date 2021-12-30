@@ -9,21 +9,13 @@ import Nvidia from '../img/nvidia.png'
 
 const Home = () => {
 
-
-    
-
-
-
     return (
         <div>
             <section >
                 <CarouselComponent />
             </section>
             
-            <div className="procesadores" 
-           
-            > 
-                {/* <img src={FondoProcesadores} alt="fondo" className="fondoProcesadores" style={{animation: `spin ${speed}s linear infinite`}}/> */}
+            <div className="procesadores" > 
                 <button  className="buttonShop">Get Started!</button>
                 <section className="logo-procesadores" >
                     <img src={Intel} alt="intel" className="intel" color="grey" />   
