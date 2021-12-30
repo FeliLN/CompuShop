@@ -1,0 +1,11 @@
+Model Information:
+* title:	U-Turn Audio Orbit Turntable
+* source:	https://sketchfab.com/3d-models/u-turn-audio-orbit-turntable-da3ad623c7ac49d7925991e6b87f3710
+* author:	James (https://sketchfab.com/james)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "U-Turn Audio Orbit Turntable" (https://sketchfab.com/3d-models/u-turn-audio-orbit-turntable-da3ad623c7ac49d7925991e6b87f3710) by James (https://sketchfab.com/james) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
