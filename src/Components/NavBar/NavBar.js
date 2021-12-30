@@ -37,7 +37,7 @@ export const NavBar = (props) => {
             placement="start"
           >
             <Offcanvas.Header closeButton>
-              <Offcanvas.Title id="offcanvasNavbarLabel">Compumundo</Offcanvas.Title>
+              <Offcanvas.Title id="offcanvasNavbarLabel">G-Soft</Offcanvas.Title>
             </Offcanvas.Header>
             <Offcanvas.Body>
               <Nav className="justify-content-end flex-grow-1 pe-3">
